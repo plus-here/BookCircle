@@ -1,0 +1,51 @@
+:root{
+  --bg: #f6f8fc;
+  --card: rgba(255,255,255,.92);
+  --border: rgba(15,23,42,.10);
+  --muted: rgba(15,23,42,.60);
+  --text: rgba(15,23,42,.90);
+  --shadow: 0 12px 30px rgba(2,6,23,.06);
+  --radius: 16px;
+
+  --brand: #2563eb;
+  --brand-2: #3b82f6;
+
+  --sidebar-bg: #0b1220;
+  --sidebar-text: rgba(255,255,255,.90);
+  --sidebar-muted: rgba(255,255,255,.65);
+  --sidebar-border: rgba(255,255,255,.08);
+}
+
+html.dark{
+  --bg: #0b1220;
+  --card: rgba(17,24,39,.72);
+  --border: rgba(148,163,184,.18);
+  --muted: rgba(226,232,240,.66);
+  --text: rgba(226,232,240,.92);
+  --shadow: 0 16px 44px rgba(0,0,0,.40);
+
+  --sidebar-bg: #070c16;
+  --sidebar-text: rgba(255,255,255,.92);
+  --sidebar-muted: rgba(255,255,255,.70);
+  --sidebar-border: rgba(255,255,255,.08);
+}
+
+/* 页面背景 */
+body{
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Element Plus：表格/对话框更“高级”一点 */
+.el-table{
+  border-radius: 14px;
+  overflow: hidden;
+}
+.el-dialog, .el-drawer{
+  border-radius: 16px;
+}
+
+/* 放到 admin-theme.css 里 */
+.page-head{ display:flex; justify-content:space-between; gap:12px; align-items:flex-end; }
+.filters{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+.pager{ margin-top:14px; display:flex; justify-content:flex-end; }
